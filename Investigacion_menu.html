@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub y Hosting</title>
+    <style>
+        /* Video de fondo */
+        #video-fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #00e5ff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000a0;
+            color: #00e5ff;
+            text-shadow: 0 0 10px #00e5ff;
+        }
+
+        h1, h2, h3 {
+            color: #00e5ff;
+            text-shadow: 0 0 8px #00e5ff;
+        }
+
+        main {
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: #0a0a0ab0;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #00e5ff88;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #000000c0;
+            color: #00e5ff;
+            box-shadow: 0 0 15px #00e5ff66;
+        }
+
+        th, td {
+            border: 1px solid #00e5ff;
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #001f2fc0;
+            color: #00e5ff;
+            text-shadow: 0 0 5px #00e5ff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #0f1f2fc0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .btn-regresar {
+            display: inline-block;
+            margin: 40px auto 0;
+            padding: 15px 30px;
+            background-color: #00e5ff;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 0 12px #00e5ff, 0 0 24px #00e5ff;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .btn-regresar:hover {
+            background-color: #00bcd4;
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px #00e5ff, 0 0 30px #00e5ff;
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+
+        .resources a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        .resources a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background-color: #0a0a0ab0;
+            border-left: 4px solid #00e5ff;
+            padding: 10px 15px;
+            margin: 10px 0;
+            box-shadow: 0 0 10px #00e5ff88;
+        }
+
+        a {
+            color: #00e5ff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Video de fondo -->
+    <video id="video-fondo" autoplay muted loop>
+        <source src="Fondo2.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+    <header>
+        <h1>GitHub y Hosting</h1>
+    </header>
+    <main>
+        <h2>GitHub</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" width="150">
+        <table>
+            <tr>
+                <th>Aspecto</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>¿Qué es GitHub?</td>
+                <td>
+                    GitHub es una plataforma basada en la nube que permite a desarrolladores y equipos colaborar en proyectos de código. Su funcionalidad principal es el control de versiones mediante Git.
+                </td>
+            </tr>
+            <tr>
+                <td>Características</td>
+                <td>
+                    <ul>
+                        <li><strong>Repositorios:</strong> Espacios para almacenar proyectos, públicos o privados.</li>
+                        <li><strong>Historial de Cambios:</strong> Cada versión del código se almacena para referencia.</li>
+                        <li><strong>Colaboración:</strong> Pull Requests, Issues, revisiones de código y Wikis.</li>
+                        <li><strong>Automatización:</strong> Uso de GitHub Actions para flujos de trabajo automáticos.</li>
+                        <li><strong>Integraciones:</strong> Compatible con herramientas como Slack, Azure y AWS.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Ventajas</td>
+                <td>
+                    <ul>
+                        <li>Mejora la colaboración y organización en proyectos.</li>
+                        <li>Fomenta la práctica de buenas metodologías de desarrollo.</li>
+                        <li>Facilita el trabajo remoto y distribuido.</li>
+                        <li>Documentación integrada y accesible.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Curiosidades</td>
+                <td>
+                    <ul>
+                        <li>Más del 70% del código abierto se almacena en GitHub.</li>
+                        <li>GitHub albergó el archivo "Doom" original de 1993 como referencia histórica.</li>
+                        <li>El Arctic Code Vault almacena el código público de GitHub en el Ártico como respaldo.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <div class="highlight">
+            <p><strong>¿Sabías que?</strong> GitHub no solo es útil para programadores. Diseñadores, escritores y científicos también lo usan para colaborar en proyectos.</p>
+        </div>
+        <h3>Recursos Recomendados</h3>
+        <ul>
+            <li><a href="https://docs.github.com/" target="_blank">Documentación Oficial</a></li>
+            <li><a href="https://github.com/features/actions" target="_blank">GitHub Actions</a></li>
+            <li><a href="https://training.github.com/" target="_blank">Capacitaciones Oficiales</a></li>
+        </ul>
+        <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IFcWZgJzBt0" title="Introducción a GitHub" frameborder="0" allowfullscreen></iframe>
+        </center>
+
+        <h2>Hosting</h2>
+        <img src="https://www.ambarhosting.com/blog/wp-content/uploads/2020/11/Hosting.png" alt="Hosting Icon" width="300">
+        <table>
+            <tr>
+                <th>Aspecto</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>¿Qué es el Hosting?</td>
+                <td>
+                    Servicio que almacena y gestiona el contenido necesario para que sitios web, correos electrónicos y aplicaciones estén disponibles en Internet.
+                </td>
+            </tr>
+            <tr>
+                <td>Tipos de Hosting</td>
+                <td>
+                    <ul>
+                        <li><strong>Compartido:</strong> Económico, ideal para pequeñas empresas.</li>
+                        <li><strong>VPS:</strong> Más control y recursos escalables.</li>
+                        <li><strong>Dedicado:</strong> Servidor completo para uso exclusivo.</li>
+                        <li><strong>Cloud Hosting:</strong> Alta flexibilidad y escalabilidad.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Ventajas</td>
+                <td>
+                    <ul>
+                        <li>Rendimiento constante con soporte técnico dedicado.</li>
+                        <li>Capacidad de personalizar servidores según necesidades.</li>
+                        <li>Seguridad robusta con respaldo automático.</li>
+                        <li>Acceso global y constante.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <div class="highlight">
+            <p><strong>Tip:</strong> Al elegir hosting, verifica el tiempo de actividad garantizado (mínimo 99.9%).</p>
+        </div>
+        <h3>Recursos Adicionales</h3>
+        <ul>
+            <li><a href="https://www.hostinger.com/tutorials" target="_blank">Guías de Hostinger</a></li>
+            <li><a href="https://wordpress.org/support/" target="_blank">Soporte WordPress</a></li>
+            <li><a href="https://aws.amazon.com/" target="_blank">Amazon Web Services (AWS)</a></li>
+        </ul>
+        <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YZWRvLeT_KU" title="Introducción al Hosting" frameborder="0" allowfullscreen></iframe>
+        </center>
+        <div class="btn-container">
+            <a href="index.html" class="btn-regresar">← Regresar a la página principal</a>
+        </div>
+    </main>
+</body>
+
+</html>

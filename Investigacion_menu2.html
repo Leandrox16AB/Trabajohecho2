@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Studio y C#</title>
+  <style>
+    /* Video de fondo */
+    #background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #00e5ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: transparent;
+      text-shadow: 0 0 10px #00e5ff;
+    }
+
+    h1, h2 {
+      color: #00e5ff;
+      text-shadow: 0 0 8px #00e5ff;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      background-color: #0a0a0acc; /* fondo con transparencia */
+      box-shadow: 0 0 20px #00e5ff66;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      color: #00e5ff;
+      box-shadow: 0 0 15px #00e5ff55;
+    }
+
+    th, td {
+      border: 1px solid #00e5ff;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #001f2f;
+    }
+
+    tr:nth-child(even) {
+      background-color: #0f1f2f;
+    }
+
+    img {
+      display: block;
+      margin: 10px auto;
+      max-width: 150px;
+    }
+
+    iframe {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+    }
+
+    .highlight {
+      background-color: #0a0a0a;
+      border-left: 4px solid #00e5ff;
+      padding: 15px;
+      margin: 20px 0;
+      box-shadow: 0 0 10px #00e5ff88;
+    }
+
+    .button-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background-color: #00e5ff;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 0 12px #00e5ff;
+      transition: 0.3s ease;
+    }
+
+    .button-link:hover {
+      background-color: #00bcd4;
+      box-shadow: 0 0 18px #00e5ff, 0 0 30px #00e5ff;
+    }
+
+    .btn-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video de fondo -->
+  <video autoplay muted loop id="background-video">
+    <source src="Fondo2.mp4" type="video/mp4">
+    Tu navegador no soporta videos HTML5.
+  </video>
+
+  <header>
+    <h1>Visual Studio y Proyecto en C#</h1>
+  </header>
+
+  <main>
+
+    <h2>Visual Studio</h2>
+    <img src="https://cdn2.iconfinder.com/data/icons/metro-ui-icon-set/512/Visual_Studio_2012.png" alt="Visual Studio Logo">
+
+    <table>
+      <tr>
+        <th>Aspecto</th>
+        <th>Descripción</th>
+      </tr>
+      <tr>
+        <td>¿Qué es Visual Studio?</td>
+        <td>Visual Studio es un entorno de desarrollo integrado (IDE) de Microsoft, utilizado para crear aplicaciones en múltiples lenguajes, especialmente C#.</td>
+      </tr>
+      <tr>
+        <td>Características</td>
+        <td>Editor inteligente con IntelliSense, depuración avanzada, soporte para .NET y C#, diseño visual de formularios.</td>
+      </tr>
+      <tr>
+        <td>Tipos de proyectos</td>
+        <td>Permite desarrollar aplicaciones de consola, escritorio (WinForms/WPF), web (ASP.NET), móviles (Xamarin), juegos (Unity) y más.</td>
+      </tr>
+      <tr>
+        <td>Extensiones</td>
+        <td>Visual Studio admite la instalación de extensiones que amplían su funcionalidad, como asistentes de código, temas visuales, herramientas de pruebas y productividad.</td>
+      </tr>
+      <tr>
+        <td>Compilación y ejecución</td>
+        <td>Compila el código a lenguaje intermedio y lo ejecuta sobre el CLR (Common Language Runtime), permitiendo la ejecución eficiente y segura de aplicaciones.</td>
+      </tr>
+      <tr>
+        <td>Lenguajes compatibles</td>
+        <td>Admite C#, C++, VB.NET, F#, Python, JavaScript, HTML, entre otros mediante extensiones.</td>
+      </tr>
+    </table>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8IKEiKU-1-c?si=55GqHs48NOqCRc6O" title="Visual Studio para principiantes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h2>Trabajo Grupal en C# - Trimestre 1</h2>
+    <table>
+      <tr>
+        <th>Elemento del Proyecto</th>
+        <th>Descripción</th>
+      </tr>
+      <tr>
+        <td>Fechas</td>
+        <td>Se solicita ingresar la fecha de ingreso y de salida de productos.</td>
+      </tr>
+      <tr>
+        <td>Nombre del producto</td>
+        <td>Nombre personalizado del artículo gestionado en el inventario.</td>
+      </tr>
+      <tr>
+        <td>Descripción</td>
+        <td>Detalle del producto o su función dentro del sistema de inventario.</td>
+      </tr>
+      <tr>
+        <td>Cantidad</td>
+        <td>Número de unidades gestionadas (entrantes y restantes en bodega).</td>
+      </tr>
+      <tr>
+        <td>Valor de compra y venta</td>
+        <td>Precio de adquisición del producto y su valor de comercialización.</td>
+      </tr>
+      <tr>
+        <td>Ganancia</td>
+        <td>El programa calcula la ganancia bruta (en dinero) y también en porcentaje.</td>
+      </tr>
+      <tr>
+        <td>Ciclo contable</td>
+        <td>El usuario define el ciclo contable donde se enmarca la factura.</td>
+      </tr>
+      <tr>
+        <td>Visualización de resultados</td>
+        <td>Se imprime una factura por consola y se muestra una tabla con todos los registros ingresados.</td>
+      </tr>
+    </table>
+
+    <p>
+      Este trabajo integró programación estructurada, entrada y salida por consola, estructuras de datos, cálculos matemáticos y presentación tabular de información. Fue realizado por Morán, Gonzalez, Guilcapi y Cedeño (3ro N) como parte del segundo trimestre.
+    </p>
+
+    <div class="highlight">
+      <p><strong>Descargar el archivo del proyecto:</strong></p>
+      <a href="Program.cs" download class="button-link">Descargar Program.cs</a>
+    </div>
+
+    <div class="btn-container">
+      <a href="index.html" class="button-link">← Regresar a la Página Principal</a>
+    </div>
+
+  </main>
+
+</body>
+</html>

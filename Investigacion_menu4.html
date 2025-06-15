@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simuladores en Soporte Técnico</title>
+    <style>
+        #video-fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #000;
+            color: #00e5ff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000aa;
+            color: #00e5ff;
+            text-shadow: 0 0 10px #00e5ff;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #0a0a0ab0;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #00e5ff88;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #00e5ff;
+            text-shadow: 0 0 8px #00e5ff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #000000c0;
+            color: #00e5ff;
+            box-shadow: 0 0 15px #00e5ff66;
+        }
+
+        th, td {
+            border: 1px solid #00e5ff;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #001f2fc0;
+        }
+
+        tr:nth-child(even) {
+            background-color: #0f1f2fc0;
+        }
+
+        iframe {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #00e5ff99;
+        }
+
+        .btn-download {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #00e5ff;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .btn-download:hover {
+            background-color: #00bcd4;
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px #00e5ff, 0 0 30px #00e5ff;
+        }
+
+        .descarga {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #000000aa;
+            border: 1px solid #00e5ff;
+            box-shadow: 0 0 12px #00e5ff;
+            text-align: center;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn-regresar {
+            padding: 12px 25px;
+            background-color: #00e5ff;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 0 12px #00e5ff, 0 0 24px #00e5ff;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .btn-regresar:hover {
+            background-color: #00bcd4;
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px #00e5ff, 0 0 30px #00e5ff;
+        }
+
+        a {
+            color: #00e5ff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <video id="video-fondo" autoplay muted loop>
+        <source src="Fondo2.mp4" type="video/mp4">
+        Tu navegador no soporta el video HTML5.
+    </video>
+
+    <header>
+        <h1>Simuladores para Soporte Técnico</h1>
+    </header>
+
+        <Center><img src="Cisco.png" alt="Cisco Packet Tracer" width="250"></Center>
+
+    <main>
+        <table>
+            <tr>
+                <th colspan="2">¿Qué son los simuladores?</th>
+            </tr>
+            <tr>
+                <td colspan="2">Son herramientas que permiten emular situaciones reales para practicar soporte técnico sin poner en riesgo equipos reales. Son esenciales para capacitar a técnicos y estudiantes en entornos seguros.</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="2">Características Principales</th>
+            </tr>
+            <tr><td>Ambientes virtuales realistas</td><td>Simulan sistemas reales para practicar.</td></tr>
+            <tr><td>Interacción con hardware/software</td><td>Permiten simular acciones reales del técnico.</td></tr>
+            <tr><td>Evaluación automática</td><td>Valida el desempeño del usuario en el simulador.</td></tr>
+            <tr><td>Escenarios personalizables</td><td>Se ajustan según nivel o necesidad de formación.</td></tr>
+            <tr><td>Compatibles con certificaciones</td><td>Útiles para exámenes como CompTIA A+, Cisco, etc.</td></tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>Tipo</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Simuladores de Hardware</td>
+                <td>Emulan componentes físicos: motherboard, cables, tarjetas, etc.</td>
+            </tr>
+            <tr>
+                <td>Simuladores de Software</td>
+                <td>Simulan interfaces gráficas, sistemas operativos o configuraciones.</td>
+            </tr>
+            <tr>
+                <td>Simuladores Integrales</td>
+                <td>Combinan hardware y software en escenarios completos de soporte técnico.</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>Simulador</th>
+                <th>Descripción</th>
+                <th>Enlace</th>
+            </tr>
+            <tr>
+                <td>TestOut LabSim</td>
+                <td>Laboratorios virtuales para certificaciones técnicas.</td>
+                <td><a href="https://www.testout.com/products/labsim" target="_blank">Visitar</a></td>
+            </tr>
+            <tr>
+                <td>Cisco Packet Tracer</td>
+                <td>Simulador de redes usado en formación Cisco.</td>
+                <td><a href="https://www.netacad.com/courses/packet-tracer" target="_blank">Visitar</a></td>
+            </tr>
+            <tr>
+                <td>CompTIA CertMaster Labs</td>
+                <td>Laboratorios virtuales oficiales para CompTIA.</td>
+                <td><a href="https://www.comptia.org/certifications/training/labs" target="_blank">Visitar</a></td>
+            </tr>
+            <tr>
+                <td>VirtualBox / VMware</td>
+                <td>Virtualización de sistemas operativos para prácticas reales.</td>
+                <td><a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a> / <a href="https://www.vmware.com/" target="_blank">VMware</a></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="2">Recursos Recomendados</th>
+            </tr>
+            <tr>
+                <td>Blog de TestOut</td>
+                <td><a href="https://www.testout.com/resources/blog" target="_blank">Ir al blog</a></td>
+            </tr>
+            <tr>
+                <td>NetAcad - Packet Tracer</td>
+                <td><a href="https://www.netacad.com/courses/packet-tracer" target="_blank">Ir al sitio</a></td>
+            </tr>
+            <tr>
+                <td>Recursos de CompTIA</td>
+                <td><a href="https://www.comptia.org/training/resources" target="_blank">Ver recursos</a></td>
+            </tr>
+        </table>
+
+        <div class="descarga">
+            <h3>Descargar presentación en Word:</h3>
+            <a class="btn-download" href="Qué son los Simuladores de Soporte Técnico.docx" download>
+                Descargar Qué son los Simuladores de Soporte Técnico.docx
+            </a>
+        </div>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/juTsxRopSbo?si=kMvXum8AuSXFEUJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <div class="btn-container">
+            <a href="index.html" class="btn-regresar">← Regresar a la página principal</a>
+        </div>
+    </main>
+</body>
+
+</html>

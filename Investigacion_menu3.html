@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MS-DOS, H5P y Almacenamiento</title>
+  <style>
+    /* Estilo para el video de fondo */
+    #video-fondo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #00e5ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #000000b0;
+      text-shadow: 0 0 10px #00e5ff;
+    }
+
+    h1, h2 {
+      color: #00e5ff;
+      text-shadow: 0 0 8px #00e5ff;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      background-color: #0a0a0ab0;
+      box-shadow: 0 0 20px #00e5ff66;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      color: #00e5ff;
+      box-shadow: 0 0 15px #00e5ff55;
+    }
+
+    th, td {
+      border: 1px solid #00e5ff;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #001f2f;
+    }
+
+    tr:nth-child(even) {
+      background-color: #0f1f2f;
+    }
+
+    iframe {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+    }
+
+    .highlight {
+      background-color: #0a0a0ab0;
+      border-left: 4px solid #00e5ff;
+      padding: 15px;
+      margin: 20px 0;
+      box-shadow: 0 0 10px #00e5ff88;
+    }
+
+    .button-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background-color: #00e5ff;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 0 12px #00e5ff;
+      transition: 0.3s ease;
+    }
+
+    .button-link:hover {
+      background-color: #00bcd4;
+      box-shadow: 0 0 18px #00e5ff, 0 0 30px #00e5ff;
+    }
+
+    .btn-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video de fondo -->
+  <video autoplay muted loop id="video-fondo">
+    <source src="Fondo2.mp4" type="video/mp4">
+    Tu navegador no soporta videos en HTML5.
+  </video>
+
+  <header>
+    <h1>MS-DOS, H5P y Almacenamiento</h1>
+  </header>
+
+  <main>
+
+    <!-- MS-DOS -->
+    <h2>MS-DOS (Microsoft Disk Operating System)</h2>
+    <table>
+      <tr>
+        <th>Aspecto</th>
+        <th>Descripción</th>
+      </tr>
+      <tr>
+        <td>¿Qué es?</td>
+        <td>MS-DOS es un sistema operativo basado en línea de comandos desarrollado por Microsoft. Fue ampliamente utilizado en los años 80 y principios de los 90.</td>
+      </tr>
+      <tr>
+        <td>Características</td>
+        <td>Sistema operativo monousuario y monotarea, uso exclusivo de comandos de texto, bajo consumo de recursos.</td>
+      </tr>
+      <tr>
+        <td>Comandos comunes</td>
+        <td><strong>DIR</strong> (lista archivos), <strong>CD</strong> (cambiar directorio), <strong>COPY</strong> (copiar archivos), <strong>DEL</strong> (eliminar archivos), <strong>CLS</strong> (limpiar pantalla), <strong>FORMAT</strong> (formatear disco).</td>
+      </tr>
+      <tr>
+        <td>Aplicaciones</td>
+        <td>Ideal para entender el funcionamiento básico de computadoras, automatización mediante scripts batch (.bat), mantenimiento de sistemas antiguos.</td>
+      </tr>
+    </table>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mvK5Y7aJDKk?si=ESSxD5-Ve4nTzfWm" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+    <!-- H5P -->
+    <h2>H5P (HTML5 Package)</h2>
+    <table>
+      <tr>
+        <th>Aspecto</th>
+        <th>Descripción</th>
+      </tr>
+      <tr>
+        <td>¿Qué es?</td>
+        <td>H5P es una plataforma de código abierto para crear contenidos interactivos educativos como quizzes, videos interactivos, presentaciones y más.</td>
+      </tr>
+      <tr>
+        <td>Características</td>
+        <td>Interactividad, reutilización de contenido, compatibilidad con Moodle y WordPress, basado en HTML5, sin necesidad de programación.</td>
+      </tr>
+      <tr>
+        <td>Tipos de contenido</td>
+        <td>Cuestionarios, juegos de memoria, líneas de tiempo, videos interactivos, presentaciones, entre otros.</td>
+      </tr>
+      <tr>
+        <td>Usos</td>
+        <td>Educación virtual, formación empresarial, creación de material autodidacta, evaluaciones digitales.</td>
+      </tr>
+    </table>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xrEuHU2Ni8E?si=eMnjJIzVkCLm-3-P" title="YouTube video player" frameborder="0" allowfullscreen></iframe> 
+
+    <!-- Almacenamiento -->
+    <h2>Medidas y Tipos de Almacenamiento</h2>
+    <table>
+      <tr>
+        <th>Unidad</th>
+        <th>Equivalencia</th>
+      </tr>
+      <tr>
+        <td>Bit</td>
+        <td>Unidad mínima de información (0 o 1)</td>
+      </tr>
+      <tr>
+        <td>Byte</td>
+        <td>8 bits</td>
+      </tr>
+      <tr>
+        <td>Kilobyte (KB)</td>
+        <td>1,024 bytes</td>
+      </tr>
+      <tr>
+        <td>Megabyte (MB)</td>
+        <td>1,024 KB</td>
+      </tr>
+      <tr>
+        <td>Gigabyte (GB)</td>
+        <td>1,024 MB</td>
+      </tr>
+      <tr>
+        <td>Terabyte (TB)</td>
+        <td>1,024 GB</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th>Tipo de Almacenamiento</th>
+        <th>Características</th>
+      </tr>
+      <tr>
+        <td>HDD</td>
+        <td>Disco duro mecánico, gran capacidad, más económico, más lento.</td>
+      </tr>
+      <tr>
+        <td>SSD</td>
+        <td>Estado sólido, sin partes móviles, muy rápido, más costoso.</td>
+      </tr>
+      <tr>
+        <td>USB</td>
+        <td>Portátil, de estado sólido, capacidad variable, fácil transporte.</td>
+      </tr>
+      <tr>
+        <td>CD/DVD</td>
+        <td>Almacenamiento óptico, menor capacidad, uso en multimedia.</td>
+      </tr>
+      <tr>
+        <td>Nube</td>
+        <td>Acceso remoto, sincronización de dispositivos, requiere internet.</td>
+      </tr>
+    </table>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uPm5vRjaps0?si=GYVqEwpE0JbVyDJA" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+    <!-- Descarga del PowerPoint -->
+    <div class="highlight">
+      <p><strong>Descargar presentación en PowerPoint:</strong></p>
+      <a href="Comandos-de-MS-DOS-y-H5P.pptx" download class="button-link">Descargar Comandos-de-MS-DOS-y-H5P.pptx</a>
+    </div>
+
+    <div class="btn-container">
+      <a href="index.html" class="button-link">← Regresar a la Página Principal</a>
+    </div>
+
+  </main>
+</body>
+</html>
